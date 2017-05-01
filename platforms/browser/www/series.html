@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <title>Do not miss it</title>
+</head>
+<body  onload="startDB();">
+  <center>
+    <div class="titulo" >
+      <h1><IMG  class="icono" SRC="img/icono_app.png">Do not miss it</h1>
+    </div>
+    <h3>Series</h3>
+    <div class="buscador">
+      <ul class="lupa">
+        <li><i class="fa fa-search" aria-hidden="true"></i>  <input type="text" name="Genero" placeholder="Buscar"  id="filterField"></li>
+      </ul>
+    </div>
+    <!-- lista de items de bd-->
+    <!--Mostrando datos-->
+    <div id="elements">
+        <table>
+            <thead>
+                <tr>
+                    <th><h3> Número </h3></th>
+                    <th><h3> Serie </h3></th>
+                    <th><h3> Genero </h3></th>
+                    <th><h3> Fecha </h3></th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="elementsList">
+                <tr>
+                    <td colspan="3">No hay datos aún</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <ul>
+      <li class="btn" ><a href="index.html">Inicio</a></li>
+    </ul>
+  <!--Terminar mostrar datos-->
+<!--agregando nueva seccion-->
+<!-- l de bd-->
+</body>
+</html>

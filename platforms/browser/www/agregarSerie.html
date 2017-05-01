@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript">
+    alert('App funcionando correctamente'+'\n'+'Ejemplo de como ingresar datos'+'\n'+'Numero:1'+'\n'+'Nombre: Izombie'+'\n'+'Genero: Terror'+'\n'+'Fecha: 13-04-2017'+'\n'+'Nota. si falta algun campo surgira un error');
+    </script>
+    <title>Do not miss it</title>
+</head>
+<body onload="startDB();">
+  <center>
+    <div class="titulo" >
+      <h1><IMG  class="icono" SRC="img/icono_app.png">Do not miss it</h1>
+    </div>
+    <h3>Agrega una serie</h3>
+    <div class="Agregando-datos">
+      <ul>
+        <li class="dato">Numero: <input type="text" id="dni" placeholder="Introduce su id" name="numero" required></li>
+        <li class="dato">Nombre: <input type="text"  id="name"  placeholder="Nombre de la serie" name="nombre" required></li>
+        <li class="dato">Genero: <input type="text"  id="genero"  placeholder="introducir el genero" name="genero" required></li>
+        <li class="ultimo-dato">Proxima temporada: <input type="date" id="fecha" name="fecha" required></li>
+         <input class="boton-save" type="submit" onclick="add();" value="Guardar"/>
+         <!--borrar-->
+         <input class="boton-save" type="submit" onclick="deleteDatabase();" value="Borrar todo"/>
+         <ul>
+           <li class="btn" ><a href="series.html">Ir a series</a></li>
+         </ul>
+      </ul>
+    </div>
+    <!--Datos que no se ven-->
+<div id="elements">
+    <table class="ocultar">
+        <thead>
+            <tr>
+                <th><h3> Número </h3></th>
+                <th><h3> Serie </h3></th>
+                <th><h3> Genero </h3></th>
+                <th><h3> Fecha </h3></th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody id="elementsList">
+            <tr>
+                <td colspan="3">No hay datos aún</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+  <!--Datos que no se ven-->
+
+</body>
+</html>

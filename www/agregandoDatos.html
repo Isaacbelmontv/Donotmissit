@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Agregando series</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <title>Do not miss it</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bdNueva.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <style>
+        td.notetitle {
+            cursor:pointer;
+          }
+    </style>
+      </head>
+      <body>
+        <div class="titulo" >
+          <h1><IMG  class="icono" SRC="img/icono_app.png">Do not miss it</h1>
+        </div>
+        <h2 class="titulo-series">Agrega tus series</h2>
+         <form>
+           <input type="hidden" id="key"><!--Aqui va la primarykey invisible-->
+           <ul class="lista" >
+             <li class="dato" >Nombre:<input type="text" name="title" maxlength="15" id="title" placeholder="Nombre de la serie" required><button type="button" name="button" onclick="validar()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+             <li class="dato" >Genero:<input type="text" name="genero" maxlength="10" id="genero" placeholder="Genero de tu serie" required><button type="button" name="button" onclick="validardos()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+             <li class="dato" >Fecha:<input name="fecha" class="fecha-input" type="date" id="fecha" required><button type="button" name="button" onclick="validartres()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+
+           </ul>
+                 <button type="submit" class="btn-save" id="addNoteButton">Guarda tu serie</button>
+
+                 <br>
+                 <br>
+               </p>
+              </form>
+        <div>
+        	<h2 class="subtitulo">Series <span id="sizeSpan"></span></h2>
+          <input type="text" class="search-query" placeholder="Search" id="filterField">
+        	 <div class="lista" id="noteList"></div>
+        	  <div class="mostrando"id="noteDetail"></div>
+        </div>
+
+        <ul>
+          <li class="btn" ><a href="index.html">Regresar</a></li>
+        </ul>
+  </body>
+</html>

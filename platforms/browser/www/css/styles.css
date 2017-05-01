@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+body{
+background-color: #db0000;
+font-family: Arial;
+}
+
+.titulo{
+font-size: 25px;
+color: black;
+background: red;
+}
+
+
+.shake{
+margin: auto;
+width: 230px;
+height: 165px;
+}
+
+.shake {
+	display:block;
+	position:relative;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.botones{
+height: auto;
+}
+
+ul .btn{
+list-style: none;
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+}
+
+.btn a{
+  border: 3px solid black;
+  background-color: #831010;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	width: 50%;
+}
+
+.btn a:hover{
+	border: 0px;
+}
+
+ul{
+list-style: none;
+}
+
+input{
+border-radius: 5px;
+padding: 5px;
+font-size: 15px;
+}
+
+.dato{
+margin-top: 10px;
+}
+
+.ultimo-dato{
+margin-top: 10px;
+margin-right: 69px;
+}
+
+i{
+margin-top: 15px;
+color: black;
+background-color: red;
+padding: 5px;
+border-radius: 5px;
+}
+
+.Agregando-datos{
+font-size: 20px;
+}
+
+h3{
+font-size: 23px;
+}
+
+.icono{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+background-color: #831010;
+border-radius: 20px;
+margin-top: 8px;
+}
+
+.lupa{
+text-align: right;
+margin-right: 25px;
+}
+
+.save{
+margin: 10px;
+padding: 5px;
+font-size: 15px;
+border-radius: 5px;
+background-color: orange;
+}
+
+.save:hover{
+background-color: red;
+border: 0px;
+}
+
+.objeto{
+margin: 30px;
+}
+
+td{
+border: 1px solid black;
+font-size: 20px;
+border-radius: 4px;
+}
+
+td:hover{
+background-color: orange;
+border: 0px;
+}
+
+.boton-save{
+font-size: 16px;
+padding: 6px;
+background-color: red;
+margin-top: 15px;
+border-radius: 4px;
+border-color: black;
+}
+
+.boton-save:hover{
+background-color: orange;
+border: 0px;
+}
+
+/*overflow: scroll;*/
+.ocultar{
+visibility: hidden;
+}
+
+.elements{
+width: 100%;
+height: auto;
+}
