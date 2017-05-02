@@ -2,13 +2,14 @@
   margin: 0px;
   padding: 0px; }
 body{
-background-color: #db0000;
+background-color: #f4a688;
 font-family: Arial;
+color: #FFF;
 }
 
 .titulo{
-color: black;
-background: red;
+color: #FFF;
+background: #D32F2F;
 }
 
 .text-titulo{
@@ -18,7 +19,7 @@ background: red;
 .shake{
 margin: auto;
 width: 230px;
-height: 165px;
+height: 180px;
 }
 
 .shake {
@@ -60,20 +61,24 @@ margin-top: 10px;
 }
 
 .btn a{
-  border: 3px solid black;
-  background-color: #831010;
+  background-color: #D32F2F;
+  border: 2px solid #D32F2F;
   text-decoration: none;
-  color: white;
-  padding: 15px;
+  color: black;
+  padding: 10px;
 	font-size: 20px;
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-left: 20px;
 	width: 50%;
+  border-radius: 5px;
+text-align: center;
 }
 
 .btn a:hover{
-	border: 0px;
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
+  color: black;
 }
 
 ul{
@@ -86,6 +91,13 @@ padding: 5px;
 font-size: 15px;
 margin-left: 10px;
 width: 180px;
+}
+
+input:hover{
+background-color: #FFF9C4;
+color: black;
+
+
 }
 
 .dato{
@@ -184,12 +196,14 @@ padding: 3px;
 margin-left: 90px;
 margin-top: 10px;
 font-size: 16px;
-background-color: orange;
-border: 2px solid orange;
+background-color: #D32F2F;
+border: 2px solid #D32F2F;
+border-radius: 3px;
 }
 
 .btn-save:hover{
-  background-color: red;
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
 }
 
 .subtitulo{
@@ -201,16 +215,18 @@ margin: 10px;
 }
 
 .lista{
-margin: 10px;
+margin-top: 10px;
+margin-left: 5px;
 height: auto;
-width: 100%;
+width: auto;
 }
 
 .mostrando{
 margin: 10px;
 height: auto;
-background-color: orange;
-border: 2px solid orange;
+background-color: #FFEB3B;
+border: 2px solid #D32F2F;
+color: black;
 width: 80%;
 }
 
@@ -234,7 +250,82 @@ border: 0px;
 }
 
 .fa-search{
-background-color: orange;
-margin-left: 38%;
+  color: white;
+  background-color: #D32F2F;
+  margin-left: 25%;
+  padding-left: 5px;
+}
 
+.fa-times{
+  color: white;
+}
+
+.fa-times:hover{
+background-color: #D32F2F;
+}
+
+.fa-pencil{
+  color: white;
+    background-color: #D32F2F;
+}
+
+.fa-pencil:hover{
+  background-color: #D32F2F;
+}
+
+.fa-trash-o{
+  margin-left: -5px;
+  color: white;
+    background-color: #D32F2F;
+}
+
+.fa-trash-o:hover{
+background-color: #D32F2F;
+}
+
+.fa-question-circle-o{
+color: #FFF;
+background-color: #D32F2F;
+margin-left: 5px;
+}
+
+.preguntas-titulo{
+margin: 5px;
+margin-left: 10px;
+}
+
+.fa-asterisk{
+margin: 5px;
+background-color: #f4a688;
+}
+
+.pregs{
+margin-left: 10px;
+}
+
+.pregs>li{
+  margin-top: 10px;
+}
+
+.preguntas-titulo-dos{
+margin: 10px;
+}
+
+.correo{
+margin-left: 10px;
+}
+
+.btn-enviar{
+padding: 3px;
+margin-left: 10px;
+margin-top: 10px;
+font-size: 16px;
+background-color: #D32F2F;
+border: 2px solid #D32F2F;
+border-radius: 3px;
+}
+
+.btn-enviar:hover{
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
 }

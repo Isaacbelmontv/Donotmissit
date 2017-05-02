@@ -13,7 +13,16 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/bdNueva.js"></script>
     <script type="text/javascript" src="js/validate.js"></script>
-    <style>
+    <script type="text/javascript">
+    alert('Para Agregar datos correctamente'+'\n'+'Asegurate de presionar la X'+'\n'+'Al terminar de agregar un dato'+'\n'+'Procura no agregar mas de 10 letras');
+    </script>
+    <title>Do not miss it</title>
+    <style type="text/css">
+    body { -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ie-user-select: none;
+    user-select: none; }
         td.notetitle {
             cursor:pointer;
           }
@@ -27,13 +36,11 @@
          <form>
            <input type="hidden" id="key"><!--Aqui va la primarykey invisible-->
            <ul class="lista" >
-             <li class="dato" >Nombre:<input type="text" name="title" maxlength="15" id="title" placeholder="Nombre de la serie" required><button type="button" name="button" onclick="validar()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-             <li class="dato" >Genero:<input type="text" name="genero" maxlength="10" id="genero" placeholder="Genero de tu serie" required><button type="button" name="button" onclick="validardos()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+             <li class="dato" >Nombre:<input type="text" name="title" id="title"  placeholder="Nombre de la serie" required  onKeyDown="if(this.value.length==10) this.value = this.value.slice(0, -1);"><button type="button" name="button" onclick="validar()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+             <li class="dato" >Genero:<input type="text" name="genero" id="genero" placeholder="Genero de tu serie" required  onKeyDown="if(this.value.length==8) this.value = this.value.slice(0, -1);" ><button type="button" name="button" onclick="validardos()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
              <li class="dato" >Fecha:<input name="fecha" class="fecha-input" type="date" id="fecha" required><button type="button" name="button" onclick="validartres()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-
            </ul>
                  <button type="submit" class="btn-save" id="addNoteButton">Guarda tu serie</button>
-
                  <br>
                  <br>
                </p>

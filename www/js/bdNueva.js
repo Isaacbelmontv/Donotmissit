@@ -121,7 +121,7 @@ $(document).ready(function() {
         };
         request.onsuccess = function(event) {
           var note = request.result;
-          $("#noteDetail").html("<h2>"+note.title+"</h2><p>"+note.genero+"</p><p>"+note.fecha+"</p>");/*impresion span*/
+          $("#noteDetail").html("<h2>"+"Nombre: "+note.title+"</h2><p>"+"<b>Genero: </b> "+note.genero+"</p><p>"+"<b>Fecha: </b>"+note.fecha+"</p>");/*impresion span*/
         };
     });
 

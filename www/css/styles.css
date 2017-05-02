@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px; }
 body{
-background-color: #F44336;
+background-color: #f4a688;
 font-family: Arial;
 color: #FFF;
 }
@@ -215,16 +215,17 @@ margin: 10px;
 }
 
 .lista{
-margin: 10px;
+margin-top: 10px;
+margin-left: 5px;
 height: auto;
-width: 100%;
+width: auto;
 }
 
 .mostrando{
 margin: 10px;
 height: auto;
 background-color: #FFEB3B;
-border: 2px solid #FFEB3B;
+border: 2px solid #D32F2F;
 color: black;
 width: 80%;
 }
@@ -251,7 +252,7 @@ border: 0px;
 .fa-search{
   color: white;
   background-color: #D32F2F;
-  margin-left: 38%;
+  margin-left: 25%;
   padding-left: 5px;
 }
 
@@ -273,10 +274,58 @@ background-color: #D32F2F;
 }
 
 .fa-trash-o{
+  margin-left: -5px;
   color: white;
     background-color: #D32F2F;
 }
 
 .fa-trash-o:hover{
 background-color: #D32F2F;
+}
+
+.fa-question-circle-o{
+color: #FFF;
+background-color: #D32F2F;
+margin-left: 5px;
+}
+
+.preguntas-titulo{
+margin: 5px;
+margin-left: 10px;
+}
+
+.fa-asterisk{
+margin: 5px;
+background-color: #f4a688;
+}
+
+.pregs{
+margin-left: 10px;
+}
+
+.pregs>li{
+  margin-top: 10px;
+}
+
+.preguntas-titulo-dos{
+margin: 10px;
+}
+
+.correo{
+margin-left: 10px;
+}
+
+.btn-enviar{
+padding: 3px;
+margin-left: 10px;
+margin-top: 10px;
+font-size: 16px;
+background-color: #D32F2F;
+border: 2px solid #D32F2F;
+border-radius: 3px;
+}
+
+.btn-enviar:hover{
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
 }
