@@ -7,11 +7,13 @@ font-family: Arial;
 }
 
 .titulo{
-font-size: 25px;
 color: black;
 background: red;
 }
 
+.text-titulo{
+  font-size: 40px;
+}
 
 .shake{
 margin: auto;
@@ -82,6 +84,8 @@ input{
 border-radius: 5px;
 padding: 5px;
 font-size: 15px;
+margin-left: 10px;
+width: 180px;
 }
 
 .dato{
@@ -116,6 +120,7 @@ margin-right: 10px;
 background-color: #831010;
 border-radius: 20px;
 margin-top: 8px;
+margin-left: 10px;
 }
 
 .lupa{
@@ -141,14 +146,17 @@ margin: 30px;
 }
 
 td{
-border: 1px solid black;
 font-size: 20px;
-border-radius: 4px;
+margin-right: 10px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 10px;
 }
 
-td:hover{
-background-color: orange;
-border: 0px;
+th{
+padding: 2px;
+padding-left: 5px;
+padding-right: 5px;
 }
 
 .boton-save{
@@ -166,11 +174,67 @@ border: 0px;
 }
 
 /*overflow: scroll;*/
-.ocultar{
-visibility: hidden;
+
+.titulo-series{
+  margin: 10px;
 }
 
-.elements{
-width: 100%;
+.btn-save{
+padding: 3px;
+margin-left: 90px;
+margin-top: 10px;
+font-size: 16px;
+background-color: orange;
+border: 2px solid orange;
+}
+
+.btn-save:hover{
+  background-color: red;
+}
+
+.subtitulo{
+margin: 10px;
+}
+
+.dato{
+margin: 10px;
+}
+
+.lista{
+margin: 10px;
 height: auto;
+width: 100%;
+}
+
+.mostrando{
+margin: 10px;
+height: auto;
+background-color: orange;
+border: 2px solid orange;
+width: 80%;
+}
+
+.subtitulo-index{
+margin: 10px;
+}
+
+.fa {
+padding: 1px;
+margin-top: -5px;
+}
+
+.fecha-input{
+margin-left: 20px;
+}
+
+button{
+margin-left: 10px;
+background-color: red;
+border: 0px;
+}
+
+.fa-search{
+background-color: orange;
+margin-left: 38%;
+
 }

@@ -2,21 +2,24 @@
   margin: 0px;
   padding: 0px; }
 body{
-background-color: #db0000;
+background-color: #F44336;
 font-family: Arial;
+color: #FFF;
 }
 
 .titulo{
-font-size: 25px;
-color: black;
-background: red;
+color: #FFF;
+background: #D32F2F;
 }
 
+.text-titulo{
+  font-size: 40px;
+}
 
 .shake{
 margin: auto;
 width: 230px;
-height: 165px;
+height: 180px;
 }
 
 .shake {
@@ -58,20 +61,24 @@ margin-top: 10px;
 }
 
 .btn a{
-  border: 3px solid black;
-  background-color: #831010;
+  background-color: #D32F2F;
+  border: 2px solid #D32F2F;
   text-decoration: none;
-  color: white;
-  padding: 15px;
+  color: black;
+  padding: 10px;
 	font-size: 20px;
 	margin-top: 10px;
 	margin-right: 20px;
 	margin-left: 20px;
 	width: 50%;
+  border-radius: 5px;
+text-align: center;
 }
 
 .btn a:hover{
-	border: 0px;
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
+  color: black;
 }
 
 ul{
@@ -84,6 +91,13 @@ padding: 5px;
 font-size: 15px;
 margin-left: 10px;
 width: 180px;
+}
+
+input:hover{
+background-color: #FFF9C4;
+color: black;
+
+
 }
 
 .dato{
@@ -118,6 +132,7 @@ margin-right: 10px;
 background-color: #831010;
 border-radius: 20px;
 margin-top: 8px;
+margin-left: 10px;
 }
 
 .lupa{
@@ -178,15 +193,17 @@ border: 0px;
 
 .btn-save{
 padding: 3px;
-margin-left: 10px;
+margin-left: 90px;
 margin-top: 10px;
 font-size: 16px;
-background-color: orange;
-border: 2px solid orange;
+background-color: #D32F2F;
+border: 2px solid #D32F2F;
+border-radius: 3px;
 }
 
 .btn-save:hover{
-  background-color: red;
+  background-color: #FFCDD2;
+  border: 2px solid #FFCDD2;
 }
 
 .subtitulo{
@@ -206,9 +223,10 @@ width: 100%;
 .mostrando{
 margin: 10px;
 height: auto;
-background-color: orange;
-border: 2px solid orange;
-width: 100%;
+background-color: #FFEB3B;
+border: 2px solid #FFEB3B;
+color: black;
+width: 80%;
 }
 
 .subtitulo-index{
@@ -228,5 +246,37 @@ button{
 margin-left: 10px;
 background-color: red;
 border: 0px;
+}
 
+.fa-search{
+  color: white;
+  background-color: #D32F2F;
+  margin-left: 38%;
+  padding-left: 5px;
+}
+
+.fa-times{
+  color: white;
+}
+
+.fa-times:hover{
+background-color: #D32F2F;
+}
+
+.fa-pencil{
+  color: white;
+    background-color: #D32F2F;
+}
+
+.fa-pencil:hover{
+  background-color: #D32F2F;
+}
+
+.fa-trash-o{
+  color: white;
+    background-color: #D32F2F;
+}
+
+.fa-trash-o:hover{
+background-color: #D32F2F;
 }
