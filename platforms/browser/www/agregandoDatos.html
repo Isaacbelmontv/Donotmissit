@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Agregando series</title>
@@ -36,9 +36,9 @@
          <form>
            <input type="hidden" id="key"><!--Aqui va la primarykey invisible-->
            <ul class="lista" >
-             <li class="dato" >Nombre:<input type="text" name="title" id="title"  placeholder="Nombre de la serie" required  onKeyDown="if(this.value.length==10) this.value = this.value.slice(0, -1);"><button type="button" name="button" onclick="validar()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-             <li class="dato" >Genero:<input type="text" name="genero" id="genero" placeholder="Genero de tu serie" required  onKeyDown="if(this.value.length==8) this.value = this.value.slice(0, -1);" ><button type="button" name="button" onclick="validardos()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-             <li class="dato" >Fecha:<input name="fecha" class="fecha-input" type="date" id="fecha" required><button type="button" name="button" onclick="validartres()"><i class="fa fa-times" aria-hidden="true"></i></button></li>
+             <li class="dato" >Nombre:<input type="text" name="title" id="title"  placeholder="Nombre de la serie" required  onKeyDown="if(this.value.length==10) this.value = this.value.slice(0, -1);"><button type="button" name="button" onclick="validar()"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></li>
+             <li class="dato" >Genero:<input type="text" name="genero" id="genero" placeholder="Genero de tu serie" required  onKeyDown="if(this.value.length==8) this.value = this.value.slice(0, -1);" ><button type="button" name="button" onclick="validardos()"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></li>
+             <li class="dato" >Fecha:<input name="fecha" class="fecha-input" type="date" id="fecha" required><button type="button" name="button" onclick="validartres()"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></li>
            </ul>
                  <button type="submit" class="btn-save" id="addNoteButton">Guarda tu serie</button>
                  <br>

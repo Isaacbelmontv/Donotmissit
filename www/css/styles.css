@@ -5,6 +5,8 @@ body{
 background-color: #f4a688;
 font-family: Arial;
 color: #FFF;
+height: auto;
+overflow-x: hidden;
 }
 
 .titulo{
@@ -76,8 +78,8 @@ text-align: center;
 }
 
 .btn a:hover{
-  background-color: #FFCDD2;
-  border: 2px solid #FFCDD2;
+  background-color: #FF5252;
+  border: 2px solid #FF5252;
   color: black;
 }
 
@@ -111,8 +113,6 @@ margin-right: 69px;
 
 i{
 margin-top: 15px;
-color: black;
-background-color: red;
 padding: 5px;
 border-radius: 5px;
 }
@@ -185,8 +185,6 @@ background-color: orange;
 border: 0px;
 }
 
-/*overflow: scroll;*/
-
 .titulo-series{
   margin: 10px;
 }
@@ -202,8 +200,8 @@ border-radius: 3px;
 }
 
 .btn-save:hover{
-  background-color: #FFCDD2;
-  border: 2px solid #FFCDD2;
+  background-color: #FF5252;
+  border: 2px solid #FF5252;
 }
 
 .subtitulo{
@@ -224,7 +222,7 @@ width: auto;
 .mostrando{
 margin: 10px;
 height: auto;
-background-color: #FFEB3B;
+background-color: #FFF9C4;
 border: 2px solid #D32F2F;
 color: black;
 width: 80%;
@@ -245,23 +243,22 @@ margin-left: 20px;
 
 button{
 margin-left: 10px;
-background-color: red;
 border: 0px;
 }
 
 .fa-search{
   color: white;
-  background-color: #D32F2F;
   margin-left: 25%;
   padding-left: 5px;
 }
 
-.fa-times{
-  color: white;
+.fa-plus-circle{
+  color: #FFF;
+  background-color: #f4a688;
 }
 
-.fa-times:hover{
-background-color: #D32F2F;
+.fa-plus-circle:hover{
+color: red;
 }
 
 .fa-pencil{
@@ -326,6 +323,6 @@ border-radius: 3px;
 }
 
 .btn-enviar:hover{
-  background-color: #FFCDD2;
-  border: 2px solid #FFCDD2;
+  background-color: #FF5252;
+  border: 2px solid #FF5252;
 }
